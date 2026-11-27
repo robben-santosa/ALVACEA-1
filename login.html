@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk — Alvacea</title>
+<meta name="description" content="Masuk ke akun Alvacea untuk menyimpan racikan, melacak pesanan, dan ikut diskusi di forum komunitas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css?v=12">
+</head>
+<body class="auth-page">
+
+<a class="auth-back" href="index.html">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Kembali ke beranda
+</a>
+
+<main class="auth-card">
+
+  <aside class="auth-aside">
+    <a class="auth-brand" href="index.html" aria-label="Alvacea beranda">
+      <img src="assets/logo-mark.svg" alt="" width="34" height="34">
+      <span>ALVACEA</span>
+    </a>
+
+    <div class="auth-aside-body">
+      <span class="auth-kicker">Selamat datang</span>
+      <h1>Racik deodoranmu, <em>mulai hari ini.</em></h1>
+      <p>Masuk untuk menyimpan racikan favorit, melacak pesanan, dan ikut diskusi di forum komunitas.</p>
+
+      <ul class="auth-perks">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Simpan racikan &amp; riwayat pesanan
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Isi ulang botol lebih cepat
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Ikut co-creation di forum
+        </li>
+      </ul>
+    </div>
+
+    <span class="auth-orb auth-orb--a" aria-hidden="true"></span>
+    <span class="auth-orb auth-orb--b" aria-hidden="true"></span>
+    <span class="auth-orb auth-orb--c" aria-hidden="true"></span>
+  </aside>
+
+  <section class="auth-main">
+
+    <div id="authFormPanel">
+      <h2>Masuk ke akunmu</h2>
+      <p class="auth-sub">Senang melihatmu lagi. Lanjutkan racikanmu.</p>
+
+      <form id="loginForm" novalidate>
+        <label class="field" for="username">
+          <span class="field-label">Username</span>
+          <span class="field-box">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6" stroke="currentColor" stroke-width="1.7"/><path d="M4.8 20c.9-3.7 3.7-5.6 7.2-5.6s6.3 1.9 7.2 5.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <input type="text" id="username" name="username" autocomplete="username" placeholder="Masukkan username" required>
+          </span>
+        </label>
+
+        <label class="field" for="password">
+          <span class="field-label">Password</span>
+          <span class="field-box">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Masukkan password" required>
+            <button type="button" class="field-toggle" id="pwToggle" aria-label="Tampilkan password">Lihat</button>
+          </span>
+        </label>
+
+        <div class="auth-row">
+          <label class="check" for="remember">
+            <input type="checkbox" id="remember" checked>
+            <span>Ingat saya</span>
+          </label>
+          <a href="#" class="auth-link" id="forgotLink">Lupa password?</a>
+        </div>
+
+        <p class="auth-error" id="loginError" role="alert" hidden></p>
+        <p class="auth-note" id="loginNote" hidden></p>
+
+        <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+
+        <div class="auth-divider"><span>atau</span></div>
+
+        <a href="index.html" class="btn btn-ghost btn-block">Lanjut sebagai tamu</a>
+      </form>
+
+      <p class="auth-foot">Baru di Alvacea? <a href="#" id="registerLink">Buat akun</a></p>
+    </div>
+
+    <div class="auth-done" id="authDone" hidden>
+      <span class="auth-avatar auth-avatar--lg" id="doneAvatar" aria-hidden="true">C</span>
+      <h2>Kamu sudah masuk</h2>
+      <p>Halo, <strong id="doneName">Charlene</strong>. Racikanmu aman tersimpan di akun ini.</p>
+      <a href="index.html" class="btn btn-primary btn-block">Lanjut ke beranda</a>
+      <a href="custom.html" class="btn btn-ghost btn-block">Buka halaman racik</a>
+      <button type="button" class="btn btn-ghost btn-block" id="doneLogout">Keluar dari akun</button>
+    </div>
+
+  </section>
+</main>
+
+<p class="auth-legal">© 2026 Alvacea · Demo antarmuka, autentikasi berjalan di sisi browser.</p>
+
+<script src="js/auth.js?v=2"></script>
+</body>
+</html>

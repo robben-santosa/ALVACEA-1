@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none" role="img" aria-label="Alvacea">
+  <defs>
+    <linearGradient id="avRing" x1="24" y1="16" x2="96" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38AAC6"/>
+      <stop offset=".42" stop-color="#3DA79F"/>
+      <stop offset="1" stop-color="#7FBD4C"/>
+    </linearGradient>
+    <linearGradient id="avLegs" x1="60" y1="28" x2="60" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#57B9CB"/>
+      <stop offset="1" stop-color="#2B8AA4"/>
+    </linearGradient>
+    <linearGradient id="avLeaf" x1="34" y1="74" x2="73" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#93CE47"/>
+      <stop offset=".55" stop-color="#6FB646"/>
+      <stop offset="1" stop-color="#4FA646"/>
+    </linearGradient>
+    <linearGradient id="avSprout" x1="60" y1="66" x2="60" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#96CE4C"/>
+      <stop offset="1" stop-color="#5FAC46"/>
+    </linearGradient>
+  </defs>
+
+  <!-- cincin -->
+  <circle cx="60" cy="60" r="49.5" stroke="url(#avRing)" stroke-width="6.4"/>
+
+  <!-- kaki A -->
+  <path d="M57.4 30C52 45 45.4 60 35 72" stroke="url(#avLegs)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M62.6 30C68 45 74.6 60 85 72" stroke="url(#avLegs)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- pita daun -->
+  <path d="M34 74C47 69 61 54 73 32C67 52 55 67 34 74Z" fill="url(#avLeaf)"/>
+
+  <!-- tunas -->
+  <g stroke="url(#avSprout)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 87V77" fill="none"/>
+    <path d="M60 79.5c-3.2-3.8-7.2-4-9.2-1.2 2.3 2.8 6.4 3.1 9.2 1.2Z" fill="url(#avSprout)" fill-opacity=".28"/>
+    <path d="M60 79.5c3.2-3.8 7.2-4 9.2-1.2-2.3 2.8-6.4 3.1-9.2 1.2Z" fill="url(#avSprout)" fill-opacity=".28"/>
+    <path d="M60 78c-.5-4.8.4-8.4 2.2-10.6.9 4.1.2 7.9-2.2 10.6Z" fill="url(#avSprout)" fill-opacity=".28"/>
+  </g>
+</svg>
